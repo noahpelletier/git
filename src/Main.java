@@ -27,5 +27,7 @@ public class Main {
 
         return tableau[indice] / diviseur;
 
+
+
     }
 }
