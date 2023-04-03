@@ -18,6 +18,27 @@ public class Main {
         System.out.println("Le résultat de la division est : " + Division(x,y));
 
     }
+    public static int ReadInteger(String message, int min, int max){
+    Scanner sc=new Scanner( System.in);
+    System.out.println(message);
+    while true{
+        try{
+            int result = Integer.parseInt( sc.nextLine());
+            if (result>=min && result <=max){
+                return result;
+
+            }
+            else throw new IllegalAccessException("La valeur doit etre comprise entre"+min+" et "+max+" : "+result);
+            }
+            catch (NumberFormatException e) {
+                System.out.println();
+            }
+
+        }
+        }
+
+
+
 
 
 
